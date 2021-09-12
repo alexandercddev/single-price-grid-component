@@ -1,11 +1,11 @@
 /** 
  * @author: alexandercds
  * @description:
- * @date: 13/septiembre/2021
+ * @date: 12/septiembre/2021
 **/ 
 
 export const Content = (props) => {
-    const { className, title, children } = props;
+    const { className = '', title, children } = props;
     return (
         <div className={`content ${className}`}>
             <h3 className="title">{title}</h3>

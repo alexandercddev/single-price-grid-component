@@ -1,7 +1,7 @@
 /** 
  * @author: alexandercds
  * @description:
- * @date: 13/septiembre/2021
+ * @date: 12/septiembre/2021
 **/
 import './assets/sass/App.scss';
 import Content from './components/Content';
@@ -13,21 +13,24 @@ const App = (props) => {
             <div className="card">
                 <div className="top">
                     <Content
+                    className="white"
                     title='Join our commuunity'>
-                        <p>30-day, hassle-free money back guarantee</p>
+                        <p className="sub-title">30-day, hassle-free money back guarantee</p>
                         <p>Gain access to our full library of tutotials along with expert code reviews.</p>
                         <p>Perfect for any developers who are serious about honing their skills.</p>
                     </Content>
                 </div>
                 <div className="bottom">
-                    <Content>
-                        <p>Monthly Subscription</p>
-                        <p><span>$29</span> per month</p>
-                        <p>Full access fdor less than $1 a day</p>
+                    <Content
+                    className="cyan-1"
+                    title="Monthly Subscription"> 
+                        <p className="sub-title"><span>$29</span> per month</p>
+                        <p className="text">Full access fdor less than $1 a day</p>
                         <InputButton value="Sign Up"/>
                     </Content>
-                    <Content>
-                        <p>Why Us</p>
+                    <Content
+                    className="cyan-2"
+                    title="Why Us"> 
                         <p>Tutorials by indusctry experts</p>
                         <p>Peer & expert code review</p>
                         <p>Coding exercises</p>

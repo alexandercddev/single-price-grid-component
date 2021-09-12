@@ -1,7 +1,7 @@
 /** 
  * @author: alexandercds
  * @description: 
- * @date: 10/septiembre/2021
+ * @date: 12/septiembre/2021
 **/  
 
 const InputButton = (props) => {
