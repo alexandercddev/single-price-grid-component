@@ -6,8 +6,14 @@
 import './assets/sass/App.scss';
 import Content from './components/Content';
 import InputButton from './components/InputButton';
+import Form from './components/Form';
+import { useForm } from 'react-hook-form';
 
 const App = (props) => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = (data) => {
+        window.open("https://alexandercd.herokuapp.com/home")   
+    }
     return (
         <section className="container">
             <div className="card">
@@ -26,7 +32,12 @@ const App = (props) => {
                     title="Monthly Subscription"> 
                         <p className="sub-title"><span>$29</span> per month</p>
                         <p className="text">Full access fdor less than $1 a day</p>
-                        <InputButton value="Sign Up"/>
+                        <Form
+                        register={register}
+                        handleSubmit={handleSubmit}
+                        onSubmit={onSubmit}>
+                            <InputButton value="Sign Up"/>
+                        </Form>
                     </Content>
                     <Content
                     className="cyan-2"
